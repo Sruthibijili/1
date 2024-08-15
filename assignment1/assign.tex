@@ -1,0 +1,129 @@
+%iffalse
+\let\negmedspace\undefined
+\let\negthickspace\undefined
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{txfonts}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{gensymb}
+\usepackage{comment}
+\usepackage[breaklinks=true]{hyperref}
+\usepackage{tkz-euclide} 
+\usepackage{listings}
+\usepackage{gvv}                                        
+%\def\inputGnumericTable{}                                 
+\usepackage[latin1]{inputenc}                                
+\usepackage{color}                                            
+\usepackage{array}                                            
+\usepackage{longtable}                                       
+\usepackage{calc}                                             
+\usepackage{multirow}                                         
+\usepackage{hhline}                                           
+\usepackage{ifthen}                                           
+\usepackage{lscape}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{float}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}[problem]{Definition}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+% Marks the beginning of the document
+\begin{document}
+\bibliographystyle{IEEEtran}
+\vspace{3cm}
+\title{Applications of Derivatives}
+\author{EE24BTECH11060-Sruthi Bijili}
+\maketitle
+
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{enumerate}
+\item  Prove the minimum value of $\frac{\brak{a+x}\brak{b+x}}{\brak{c+x}}$,
+$a$,$b$$>$$c$, $x$$>$$-c$ is ${\brak{\sqrt{a-c}+\sqrt{b-c}}}^2$. 
+           
+\hfill{(1979})
+
+
+\item  Let $x$ and $y$ be two real variables such that $x$$>$$0$and $xy=1$.Find the minimum value of $x+y$.\\
+
+\hfill{(1981-2 Marks)}
+
+\item  For all $x$ in $\sbrak{0,1}$,let the second derivative $f^{\prime\prime}\brak{x}$ of a function $f\brak{x}$ exist and satisfy $\abs{f^{\prime\prime}\brak{x}}$ $<$ $1$.If $f\brak{0}$=$f\brak{1}$,then show that$\abs{ f^{\prime}\brak{x}}$ $<$$1$for all $x$ in $\sbrak{0,1}$.\\
+
+\hfill{(1981-4 Marks)}
+
+\item  Use the function $f\brak{x}$=$x^\frac{1}{x}$,$x$ $>$ $0$.to determine the bigger of the two numbers $e^\pi$ and $\pi^e$.\\
+
+\hfill{(1981-4 Marks)}
+
+\item  If $f\brak{x}$ and $g\brak{x}$ are differentiable function for $0$$\leq$ $x$ $\leq$$1$ such that $f\brak{0}$=$2$, $g\brak{0}$=$0$, $f\brak{0}$=$6$; $g\brak{0}$=$2$, then show that there exist $c$ satisfying $0$$<$c$<$$1$and $f^{\prime}\brak{c}$=$2$$g^{\prime}\brak{c}$.\\
+
+\hfill{(1982-2 Marks)}
+
+\item  Find the shortest distance of the point $\brak{0,c}$from the parabola $y=x^2$ where $0$$\leq$ $c$ $\leq$$5$.\\
+
+\hfill{(1992-2 Marks)}
+
+\item  If $ax^2$$+$$\frac{b}{x}$  for all positive $x$ where $a$$>$$0$ and $b$$>$$0$ show that $27ab^2$ $\geq$$4c^3$.\\
+
+\hfill{(1982-2 Marks)}
+
+\item Show that $1$$+$$x \ln\brak{x+\sqrt{x^2+1}}$ $\geq$ $\sqrt{1+x^2}$ for all $x$$\geq$$0$.\\
+
+\hfill{(1983-2 Marks)}
+
+\item Find the coordinates of the point on the curve $y$=$\frac{x}{1+x^2}$ where the tangent to the curve has the greatest slope.\\
+
+\hfill{(1984-4 Marks)}
+
+\item  Find all the tangents to the curve $y$=$\cos\brak{x+y}$, $-2$$\pi$$\leq$ $x$ $\leq$$2$$\pi$, that are parallel to the line $x+2y=0$.\\
+
+\hfill{(1985-5 Marks)}
+
+\item  Let $f\brak{x}$=$\sin^3x$+$\lambda\sin^2x$,  $-\frac{\pi}{2}$ $<$  $x$ $<$ $\frac{\pi}{2}$. Find the intervals in which $\lambda $ should lie in order that $f\brak{x}$ has exactly one minimum  and exactly one maximum.\\
+
+\hfill{(1985-5 Marks)}
+
+\item  Find the point on the curve $4x^2+a^2y^2$ $=$ $4a^2$ that is farthest from the point$\brak{0,-2}$.\\
+
+\hfill{(1987- Marks)}
+
+\item  Investigate for the maxima and minima the function 
+$f\brak{x}$=$\int_{1}^{x}\sbrak{2\brak{t-1}\brak{t-2}^3+3\brak{t-1}^2\brak{t-1}^2}$dt.\\
+
+\hfill{(1988-5 Marks)}
+
+\item  Find all maxima and minima of the function $y$=$x\brak{x-1}^2$,the y-axis and the line $y=2$.\\
+
+\hfill{(1989-5 Marks)}
+
+\item Show that $2\sin x$+$\tan x$ $\ge$ $3x$   where $0$$\le$ $x$ $\le$ $\frac{\pi}{2}$.\\
+
+\hfill{(1990-4 Marks)}
+
+\end{enumerate}
+
+
+
+
+
+
+
+\end{document}4
